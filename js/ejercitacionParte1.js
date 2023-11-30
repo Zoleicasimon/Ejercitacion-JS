@@ -68,15 +68,15 @@ console.log(array);*/
     
 //8.- Escribe un programa que pida un número y diga si es divisible por 2
 
-/*let number=parseInt(prompt('Ingrese un numero'));
-let resultado=number/2
+let number=parseInt(prompt('Ingrese un numero'));
+let resultado=number%2
 
 if (resultado===0){
     console.log('su numero es divisible en 2');
 }else{
     console.log('su numero no es divisible en 2');
 }
-*/
+
 //9.- Escribe un programa que pida una frase y escriba las vocales que aparecen
 //Nota: Tener en cuenta la función length y substring o charAt (developer mozilla)
 
@@ -92,3 +92,37 @@ let a=frase.charAt(index);
 }
 }
 console.log(vocalesEncontradas);
+
+//10.10.- Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro)
+
+let a=parseInt(prompt('Ingrese un number'));
+
+if(a%2===0){
+    console.log('Su numero es divisible en dos');
+}else if (a%3===0){
+        console.log('Su numero es divisible en tres');
+    }else if (a%5===0){
+        console.log('Su numero es divisible en cinco');
+}else if (a%7===0){
+        console.log('Su numero es divisible en siete')
+}
+
+//11.Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay que decir todos por los que es divisible)
+
+let numA=parseInt(prompt('Ingrese un number'));
+let array=[] ;
+
+if(numA%2===0){
+    let b=array.push(2);
+}
+    if (numA%3===0){
+        let c= array.push(3);
+}
+    if (numA%5===0){
+    let d= array.push(5);
+}
+if(numA%7===0){
+    let e=array.push(7);
+}
+console.log ('Su numero es divisible por: ', array);
+document.write('Su numero es divisible por: ', array);
